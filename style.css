@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin 0;
+}
+
+
+body {
+font-family: sans-serif;
+}
+
+:root {
+    --blue: #92ccce;
+    --gray: #30343c;
+
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--gray);
+    color: var(--blue);
+    font-size: 40px;
+}
+
+div .name {
+    padding: 40px;
+    background-color: var(--blue);
+    color: var(--gray)
+}
+
+header div .flex-container {
+    color: var(--blue);
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: center;
+}
+
+nav {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--gray);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--blue) 0%, var(--gray) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+
