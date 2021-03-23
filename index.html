@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="navlink">
-        <h1>Patrick Moore</h1>
-        <nav>
-            <ul class="ul">
-            <li><a class="about" href="#about">About Me</a></li>
-            <li><a class="about" href="#work">Work</a></li>
-            <li><a class="about" href="#contact-me">Contact Me</a></li>
-            <li><a class="about" href="#">Resume</a></li>
-            </ul>
-        </nav>
-        </div>
+      <h1>Patrick Moore</h1>
+      <nav>
+        <a class="about" href="#about">About Me</a>
+        <a class="about" href="#work">Work</a>
+        <a class="about" href="#contact-me">Contact Me</a>
+        <a class="about" href="#">Resume</a>
+      </nav>
     </header>
 
-    <section>
-                <div class="background" style="background-image: url(./assets/backgroundimage.jpg); width: 100%; height: 400px; background-size: cover; background-position: center;">
-                <div class="fullstack">
-                    Full Stack Developer
-                </div>
-                </div>
-
+    <section class="background">
+      <h1 class="fullstack">Full Stack Developer</h1>
     </section>
-<main>
-   <section>
-       <h2 id="aboutme">About Me</h2>
-       <div class="text">
-           <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente minus fuga. Voluptas saepe aspernatur tempore expedita ea, non hic cumque blanditiis rerum molestias ipsum nihil sequi, quibusdam qui vero!
-           </p>
-           <p>
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident molestias doloribus esse fugit iste vel sapiente deleniti, nesciunt reprehenderit ipsam rerum repellendus aliquid minus commodi culpa corporis, adipisci eaque earum?
-           </p>
-           
-       </div>
-   </section>
-
-   <section>
-       <h2 id="work">Work</h2>
-       <div class="box">
-       </div>
-   </section>
-
-   <section>
-       <h2 id="contact-me">Contact Me</h2>
-        <div class="contact">
-        <a>Phone</a>
-        <a>Github</a>
+    <main>
+      <section class="info-section">
+        <h2 id="aboutme">About Me</h2>
+        <div class="graybar">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            sapiente minus fuga. Voluptas saepe aspernatur tempore expedita ea,
+            non hic cumque blanditiis rerum molestias ipsum nihil sequi,
+            quibusdam qui vero!
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+            molestias doloribus esse fugit iste vel sapiente deleniti, nesciunt
+            reprehenderit ipsam rerum repellendus aliquid minus commodi culpa
+            corporis, adipisci eaque earum?
+          </p>
         </div>
-   </section>
+      </section>
 
-</main>
-</body>
+      <section class="info-section">
+        <h2 id="work">Work</h2>
+        <div class="graybar">
+          <div class="projecticon" id="surf">
+            <p>Surf Report <br />MERN Stack</p>
+          </div>
+
+          <div class="projecticon" id="ledwall">
+            <p>LED Wall <br />Iot</p>
+          </div>
+
+          <div class="projecticon" id="calculator">
+            <p>Calculator <br />React/Javascript/CSS</p>
+          </div>
+
+          <div class="projecticon" id="puzzle">
+            <p>Pastel Puzzles <br />MERN Stack</p>
+          </div>
+
+          <div class="projecticon" id="runbuddy">
+            <p>Run Buddy <br />HTML/CSS</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <h2 id="contact-me">Contact Me</h2>
+        <div class="footer"></div>
+            <div class="contact">
+                <a>(806)654-7608</a>
+                <a>Github</a>
+            </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
-
-
-
