@@ -30,7 +30,7 @@ header h1{
     background-color: var(--blue);
     color: var(--gray);
     padding-left: 100px;
-    font-size: 2.75vw;
+    font-size: 55px;
 }
 
 nav {
@@ -50,7 +50,7 @@ a:hover {
     background-color: var(--blue);
   }
   
-.about {
+.aboutme {
     text-decoration: none;
     padding: 5px 10px;
     color: var(--blue);
@@ -60,7 +60,7 @@ a:hover {
     background-size: 100% 0.2em;
     background-position: bottom;
     transition: all 0.25s ease-in;
-    font-size: 15px;
+    font-size: 20px;
  } 
  
  .info-section{
@@ -70,6 +70,7 @@ a:hover {
      display:flex;
      margin-top: 20px;
      /* justify-content: space-between; */
+
  }
 
 #aboutme {
@@ -118,12 +119,6 @@ a:hover {
     width: 50%;
     border-left: var(--gray) 3px solid;
 }
-
- /* h2{
-    padding-left: 100px; 
-    margin-left: 20%; 
-
-}   */
 
 .contact {
     display: flex;
@@ -218,28 +213,66 @@ a:hover {
     background-color: var(--blue);
 }
 
-/* .contact {
-    text-decoration: underline;
-    color: var(--gray);
-    padding: 5px 10px;
-    font-size: 24px;
-} */
-
-
-/* @media max width 768px */
-
 @media screen and (max-width: 980px){
-
 
 }
 
 @media screen and (max-width: 768px){
+    .info-section{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #surf{
+        width: 100%;
+        height: 200px;
+    }
+    .projecticonsurf p{
+        margin-top: 100px;
+        
+    }
+    #ledwall{
+        width: 100%;
+    }
+    #puzzle{
+        width: 100%;
+    }
+    #calculator{
+        width: 100%;
+        margin-left: 0px;
+
+    }
+    #runbuddy{
+        width: 100%;
+        margin-left: 0px;
+    }
+
 .fullstack{
     margin-right: 0;
 }
 .background{
     justify-content: center;
     text-align: center;
+}
+#aboutme {
+    margin-left: 0px;
+}
+
+ #work {
+     margin-left: 0px;
+ }
+
+ #contact-me{
+     margin-left: 0px;
+ }
+ .graybar{
+     border-top: var(--gray) 3px solid;
+     border-left: none;
+ }
+.contact{
+    border-top: var(--gray) 3px solid;
+    border-left: none;
 }
 }
 
