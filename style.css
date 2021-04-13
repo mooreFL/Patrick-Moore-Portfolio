@@ -117,6 +117,7 @@ button:hover{
     height: relative;
     padding: 20px;
     width: 85%;
+    font-size: 22px;
 }
 
 .contact {
