@@ -48,6 +48,12 @@ a:hover {
     background-color: var(--blue);
     color: var(--gray) !important;
 }
+
+button:hover{
+    opacity: 80%;
+    
+
+}
   
 .aboutme {
     text-decoration: none;
@@ -81,7 +87,6 @@ a:hover {
  }
 
 .fullstack {
-    
     display: inline;
     margin-right: 15px;
     margin-top: 290px;
@@ -135,15 +140,16 @@ a:hover {
     position: absolute;
     padding: 10px;
     margin-top: 300px;
-    background-color: var(--blue) !important;
+    background-color: var(--gray) !important;
+    color: white;
     border: none;
     border-radius: 0;
 }
 
 .modalbutton {
     border-radius: 0px;
-    background-color: var(--blue) !important;
-    color: var(--gray) !important;
+    background-color: var(--gray)!important;
+    color: white !important;
 }
 
 .projecticonpassword{
@@ -182,11 +188,15 @@ a:hover {
     background-color: var(--blue);
 }
 
+.jauntimg {
+   width: 90%;
+   height: 90%;
+}
 
 #modalbuttonpass{
     border-radius: 0px;
-    background-color: var(--blue);
-    color: var(--gray);
+    background-color: var(--gray);
+    color: white;
 }
 
 #weather {
