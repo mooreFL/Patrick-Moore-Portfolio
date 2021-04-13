@@ -1,7 +1,7 @@
 
 :root {
-    --blue: #92ccce;
-    --gray: #30343c;
+    --blue: #4fa6f8;
+    --gray: #4f5052;
 }
 
 * {
@@ -12,17 +12,15 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 header {
     display:flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 30px 30px 0px;
     text-align: center;
     background-color: var(--gray);
     color: var(--blue);
-    font-size: 40px;
+    font-size: 35px;
 }
 
 header h1{
@@ -48,7 +46,8 @@ nav a {
 
 a:hover {
     background-color: var(--blue);
-  }
+    color: var(--gray) !important;
+}
   
 .aboutme {
     text-decoration: none;
@@ -61,28 +60,24 @@ a:hover {
     background-position: bottom;
     transition: all 0.25s ease-in;
     font-size: 20px;
- } 
+} 
  
- .info-section{
-     /* margin: 15px, 0; */
-     /* padding: 10px 0; */
+.info-section{
      flex-direction: row;
      display:flex;
      margin-top: 20px;
-     /* justify-content: space-between; */
-
- }
-
-#aboutme {
-    margin-left: 80px;
 }
 
- #work {
-     margin-left: 111px;
- }
+#aboutme {
+    margin-left: 60px;
+}
 
- #contact-me{
-     margin-left: 66px;
+#work {
+     margin-left: 125px;
+}
+
+#contact-me{
+     margin-left: 40px;
  }
 
 .fullstack {
@@ -99,7 +94,7 @@ a:hover {
 }
 
 .background {
-    background-image: url("./assets/backgroundimage.jpg");
+    background-image: url("./assets/bricks.jfif");
     width: 100%;
     height: 400px;
     background-size: cover;
@@ -112,12 +107,11 @@ a:hover {
 .graybar {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     font-size: 20px;
     height: relative;
     padding: 20px;
-    width: 50%;
-    border-left: var(--gray) 3px solid;
+    width: 85%;
 }
 
 .contact {
@@ -127,8 +121,6 @@ a:hover {
     font-size: 20px;
     padding: 20px;
     width: 50%;
-    border-left: var(--gray) 3px solid;
-    /* text-align: center; */
     text-decoration: underline;
     justify-content: space-around;
 }  
@@ -139,26 +131,22 @@ a:hover {
     margin-top: 10px;
 }
 
-
-.projecticonsurf p{
+#modalbutton{
     position: absolute;
-    /* height: 150px;
-    width: 200px; */
     padding: 10px;
     margin-top: 300px;
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
+    border: none;
+    border-radius: 0;
 }
 
-.projecticon p{
-    position: absolute;
-    /* height: 150px;
-    width: 200px; */
-    padding: 10px;
-    margin-top: 100px;
-    background-color: var(--blue);
+.modalbutton {
+    border-radius: 0px;
+    background-color: var(--blue) !important;
+    color: var(--gray) !important;
 }
 
-.projecticonsurf{
+.projecticonpassword{
     border: 5px solid var(--blue);
 }
 
@@ -167,16 +155,16 @@ a:hover {
     width: 400px;
 }
 
-#surf{
-    background-image: url(./assets/jeremy-bishop-iftBhUFfecE-unsplash\ \(1\).jpg);
+#password{
+    background-image: url(./assets/PasswordGeneratorIMG.PNG);
     width: 99%;
     height: 400px;
     background-size: cover;
     background-position: center;
 }
 
-#ledwall {
-    background-image: url(./assets/lukasz-niescioruk-LHgq4S_Zk2w-unsplash\ \(1\).jpg);
+#dayplan {
+    background-image: url(./assets/WorkDayIMG.PNG);
     width: 49%;
     height: 200px;
     background-size: cover;
@@ -184,8 +172,8 @@ a:hover {
     background-color: var(--blue);
 }
 
-#calculator {
-    background-image: url(./assets/clayton-robbins-ihqB-c8C7Bc-unsplash.jpg);
+#jaunt {
+    background-image: url(./assets/jauntIMG.PNG);
     width: 49%;
     height: 200px;
     margin-left: 10px;
@@ -194,17 +182,24 @@ a:hover {
     background-color: var(--blue);
 }
 
-#puzzle {
-    background-image: url(./assets/hans-peter-gauster-3y1zF4hIPCg-unsplash.jpg);
+
+#modalbuttonpass{
+    border-radius: 0px;
+    background-color: var(--blue);
+    color: var(--gray);
+}
+
+#weather {
+    background-image: url(./assets/WeatherIMG.PNG);
     width: 49%;
     height: 200px;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-color: var(--blue);
 }
 
-#runbuddy {
-    background-image: url(./assets/lucas-favre-JnoNcfFwrNA-unsplash.jpg);
+#codequiz {
+    background-image: url(./assets/CodeQuizIMG.PNG);
     width: 49%;
     height: 200px;
     margin-left: 10px;
@@ -214,68 +209,102 @@ a:hover {
 }
 
 @media screen and (max-width: 980px){
-
 }
 
 @media screen and (max-width: 768px){
+     nav {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav a {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+
+    header h1 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    }
+
     .info-section{
         flex-direction: column;
         align-items: center;
-
+    }
+    
+    #modalbuttonpass {
+        margin-top: 100px;
     }
 
-    #surf{
+    .modalbutton {
+        margin-top: 100px;
+    }
+
+    #password{
         width: 100%;
         height: 200px;
     }
-    .projecticonsurf p{
-        margin-top: 100px;
-        
-    }
-    #ledwall{
-        width: 100%;
-    }
-    #puzzle{
-        width: 100%;
-    }
-    #calculator{
-        width: 100%;
-        margin-left: 0px;
 
-    }
-    #runbuddy{
+    #dayplan{
         width: 100%;
-        margin-left: 0px;
     }
 
-.fullstack{
+    #codequiz{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #jaunt{
+        width: 100%;
+        margin-left: 0px;
+    } 
+    
+    #weather{
+        width: 100%;
+        margin-left: 0px; 
+    }
+
+    .fullstack{
     margin-right: 0;
-}
-.background{
+    }
+
+    .background{
     justify-content: center;
     text-align: center;
-}
-#aboutme {
+    }
+
+    #aboutme {
     margin-left: 0px;
-}
+    }
 
- #work {
+    #work {
      margin-left: 0px;
- }
+    }
 
- #contact-me{
+    #contact-me{
      margin-left: 0px;
- }
- .graybar{
-     border-top: var(--gray) 3px solid;
-     border-left: none;
- }
-.contact{
+    }
+
+    .contact{
     border-top: var(--gray) 3px solid;
     border-left: none;
+    }
 }
-}
 
+/* PW generator link */
+/* https://moorefl.github.io/password_generator/ */
 
+/* Day Scheduler link */
+/* https://moorefl.github.io/Work-Day-Scheduler/ */
 
+/* Weather Dashboard link */
+/* https://moorefl.github.io/Weather-Dashboard/ */
+
+/* Code Quiz link */
+/* https://moorefl.github.io/Moore_Coding_Quiz/ */
 
