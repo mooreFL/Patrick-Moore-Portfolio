@@ -179,8 +179,8 @@ button:hover{
     background-color: var(--blue);
 }
 
-#jaunt {
-    background-image: url(./assets/jauntIMG.PNG);
+#chill {
+    background-image: url(./assets/Capture.PNG);
     width: 49%;
     height: 200px;
     margin-left: 10px;
@@ -189,7 +189,7 @@ button:hover{
     background-color: var(--blue);
 }
 
-.jauntimg {
+.chillimg {
    width: 90%;
    height: 90%;
 }
@@ -270,7 +270,7 @@ button:hover{
         margin-left: 0;
     }
 
-    #jaunt{
+    #chill{
         width: 100%;
         margin-left: 0px;
     } 
@@ -319,3 +319,10 @@ button:hover{
 /* Code Quiz link */
 /* https://moorefl.github.io/Moore_Coding_Quiz/ */
 
+
+
+/* &Chill link */
+/* url */
+/* https://and--chill.herokuapp.com/ */
+/* repo */
+/* https://github.com/adamalcantara/andChill */
